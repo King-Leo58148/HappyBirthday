@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>For Sandra 🩷</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===================== PASSWORD GATE ===================== -->
+<div id="lock-screen">
+  <div id="lock-card">
+    <p class="eyebrow">just for you</p>
+    <h2 id="lock-heading">This page has something for Sandra 🩷</h2>
+    <p class="section-copy">Enter the password to open it.</p>
+    <form id="lock-form" autocomplete="off">
+      <input type="password" id="lock-input" placeholder="password" autocomplete="off" inputmode="text" />
+      <button type="submit">Unlock</button>
+    </form>
+    <p id="lock-error">That's not quite it — try again 🤍</p>
+  </div>
+</div>
+
+<div id="site-content" hidden>
+
+<canvas id="stars-canvas"></canvas>
+
+<button id="sound-toggle" aria-label="Toggle music" title="Play a little something">
+  <svg id="icon-muted" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3 3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06a8.99 8.99 0 0 0 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4 9.91 6.09 12 8.18V4z"/></svg>
+  <svg id="icon-playing" viewBox="0 0 24 24" width="20" height="20" style="display:none"><path fill="currentColor" d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+</button>
+
+<!-- ===================== HERO ===================== -->
+<section id="hero">
+  <div class="hero-content">
+    <p class="eyebrow reveal-up">2 hearts • 1 sky • countless miles</p>
+    <h1 class="reveal-up delay-1">Happy Birthday,<br><span class="name-script">Sandra</span></h1>
+    <p class="hero-sub reveal-up delay-2">Wherever you are, you're never far.</p>
+    <button id="scroll-cue" class="reveal-up delay-3" aria-label="Scroll down">
+      <span>open this for me</span>
+      <svg width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M12 16.5 4.5 9l1.4-1.4L12 13.7l6.1-6.1L19.5 9z"/></svg>
+    </button>
+  </div>
+</section>
+
+<!-- ===================== SAME SKY (signature interactive) ===================== -->
+<section id="same-sky">
+  <div class="section-inner">
+    <p class="eyebrow">the signature</p>
+    <h2>Different Places, <em>Same Sky</em></h2>
+    <p class="section-copy">Find me up there — drag the moon across the night and watch the stars wake up. Each one's holding something I never got to say enough.</p>
+  </div>
+  <div id="sky-stage">
+    <div id="moon" tabindex="0" role="button" aria-label="Drag the moon">🌙</div>
+    <div class="sky-note" data-note="You're the first thing I think of and the last thing before I sleep." style="top:18%; left:12%;"></div>
+    <div class="sky-note" data-note="Distance just means my love has to travel further to reach you — and it always does." style="top:30%; left:75%;"></div>
+    <div class="sky-note" data-note="Every call, every text, every 'goodnight' — none of it is small to me." style="top:60%; left:20%;"></div>
+    <div class="sky-note" data-note="I'm so proud of who you are, not just who you are to me." style="top:70%; left:65%;"></div>
+    <div class="sky-note" data-note="One day there won't be a screen between us. I can't wait for that." style="top:45%; left:48%;"></div>
+  </div>
+  <p class="sky-hint">✨ tap the glowing stars</p>
+</section>
+
+<!-- ===================== GALLERY ===================== -->
+<section id="gallery">
+  <div class="section-inner">
+    <p class="eyebrow">the proof</p>
+    <h2>You, in <em>every light</em></h2>
+    <p class="section-copy">Every picture of you is my favorite one — until the next.</p>
+  </div>
+  <div class="gallery-grid">
+    <figure class="gallery-item reveal-up"><img src="images/sandra-1.jpg" alt="Sandra"><figcaption>add a caption here</figcaption></figure>
+    <figure class="gallery-item reveal-up delay-1"><img src="images/sandra-2.jpg" alt="Sandra"><figcaption>add a caption here</figcaption></figure>
+    <figure class="gallery-item reveal-up delay-2"><img src="images/sandra-3.jpg" alt="Sandra"><figcaption>add a caption here</figcaption></figure>
+    <figure class="gallery-item reveal-up"><img src="images/sandra-4.jpg" alt="Sandra"><figcaption>add a caption here</figcaption></figure>
+    <figure class="gallery-item reveal-up delay-1"><img src="images/sandra-5.jpg" alt="Sandra"><figcaption>add a caption here</figcaption></figure>
+    <figure class="gallery-item reveal-up delay-2"><img src="images/sandra-6.jpg" alt="Sandra"><figcaption>add a caption here</figcaption></figure>
+  </div>
+</section>
+
+<!-- ===================== BIRTHDAY CAKE ===================== -->
+<section id="cake-section">
+  <div class="section-inner">
+    <p class="eyebrow">make a wish</p>
+    <h2>Blow Out Your <em>Candles</em></h2>
+    <p class="section-copy" id="cake-instruction">Make a wish, then blow into your mic to put out the candles 🕯️ — or just tap them if you'd rather.</p>
+  </div>
+
+  <div id="cake-stage">
+    <div id="confetti-layer"></div>
+    <svg id="cake-svg" viewBox="0 0 400 320" xmlns="http://www.w3.org/2000/svg">
+      <!-- plate -->
+      <ellipse cx="200" cy="290" rx="150" ry="14" fill="#3d1640" opacity="0.5"/>
+      <!-- bottom tier -->
+      <rect x="90" y="210" width="220" height="70" rx="10" fill="#C2347D"/>
+      <rect x="90" y="210" width="220" height="14" rx="7" fill="#F2A6D8"/>
+      <!-- middle tier -->
+      <rect x="120" y="150" width="160" height="65" rx="10" fill="#FF6F61"/>
+      <rect x="120" y="150" width="160" height="13" rx="6" fill="#FFC857"/>
+      <!-- top tier -->
+      <rect x="150" y="105" width="100" height="50" rx="9" fill="#FFC857"/>
+      <rect x="150" y="105" width="100" height="11" rx="5" fill="#FFF6EC"/>
+      <!-- sprinkles -->
+      <g id="sprinkles"></g>
+      <!-- candles -->
+      <g id="candles"></g>
+    </svg>
+  </div>
+
+  <div id="cake-controls">
+    <button id="mic-btn">🎤 blow into your mic</button>
+    <p id="mic-status"></p>
+  </div>
+</section>
+
+<!-- ===================== CONSTELLATION OF US ===================== -->
+<section id="constellation">
+  <div class="section-inner">
+    <p class="eyebrow">the timeline</p>
+    <h2>The <em>Constellation</em> of Us</h2>
+    <p class="section-copy">Tap each star to trace how we got here.</p>
+  </div>
+  <svg id="const-svg" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet">
+    <path id="const-line" d="" />
+    <g id="const-stars"></g>
+  </svg>
+  <div id="const-text">Tap a star above to read the memory</div>
+</section>
+
+<!-- ===================== THE LETTER ===================== -->
+<section id="letter-section">
+  <div class="section-inner">
+    <p class="eyebrow">the words</p>
+    <h2>What I Could Never <em>Say Enough</em></h2>
+  </div>
+  <div id="envelope-wrap">
+    <div id="envelope">
+      <div class="flap"></div>
+      <div class="body"></div>
+      <p id="envelope-label">tap to open</p>
+    </div>
+    <div id="letter-paper">
+      <p>My Sandra,</p>
+      <p>I don't know how fate managed to bring us together, but I know this wasn't a coincidence — it was a blessing.</p>
+      <p>I never imagined I'd find someone as sweet, as beautiful, and as caring as you. Someone understanding, someone who'd stand by me through it all.</p>
+      <p>You are as rare as a diamond — valuable, and so hard to come by. I wouldn't trade you for anything in this world, because to me, you are the most valuable thing I could ever ask for. You are everything I need.</p>
+      <p>I don't even know how to fully express how much I appreciate you, how much I love you. It's beyond words — a feeling I can't completely capture.</p>
+      <p>The friendship we share. The moments we've had. The memories we've made. The fights we've survived. The ups and downs. The nights we cried together. The days we laughed until it hurt. The quiet promises we made to each other.</p>
+      <p>These are memories I will never forget, and I will be forever grateful that I get to share them with you.</p>
+      <p>I still can't fully express myself — but today, of all days, I just want you to know: I am so grateful for everything. For you.</p>
+      <p class="signoff">Happy birthday, my love. I love you so much. 💙</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <p>made with all my heart, for you 🩷</p>
+</footer>
+
+</div><!-- /#site-content -->
+
+<script src="script.js"></script>
+</body>
+</html>
